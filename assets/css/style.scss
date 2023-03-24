@@ -2103,7 +2103,7 @@ h6 {
 
   &__top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   &__logo {
@@ -2264,4 +2264,68 @@ h6 {
     }
   }
 }
+
+
+.new-documents {
+  .documents-wrapper {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+    @media (max-width:420px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  .documents-card {
+    background: #FFFFFF;
+    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+    transition: all ease-in .3s;
+    &:hover{
+      box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.3);
+    }
+    border-radius: 16px;
+    padding: 24px 47px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 12px 20px 12px 0;
+    img{
+      max-width: 72px;
+    }
+    p{
+      color: #192A82;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+    @media (max-width:600px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media (max-width:400px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    }
+    @media (max-width:600px) {
+      padding: 10px 20px;
+    }
+    picture{
+      margin-right: 62px;
+      @media (max-width: 600px) {
+        margin-right: 20px;
+      }
+    }
+    
+  }
+}
+
+main{
+  flex-grow: 1;
+}
+
+main:has(.new-documents){
+  background: #ECF4FF;
+
+}
+
 
