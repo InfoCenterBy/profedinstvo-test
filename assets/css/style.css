@@ -2077,7 +2077,7 @@ main:has(.new-documents) {
 }
 
 .documents-detail {
-  margin-bottom: 26px;
+  margin-bottom: 36px;
 }
 .documents-detail__title {
   color: #192A82;
