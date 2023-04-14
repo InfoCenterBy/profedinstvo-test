@@ -32,6 +32,7 @@ html,
 body {
   height: 100%;
   min-width: 320px;
+  font-size: 16px;
 }
 
 body {
@@ -222,25 +223,107 @@ h6 {
   }
 }
 
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+@media (max-width: 690px) {
+  .align-items-sm-start {
+    align-items: flex-start;
+  }
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+@media (max-width: 690px) {
+  .flex-sm-column {
+    flex-direction: column !important;
+  }
+}
+
 .info-banner-block {
   margin-top: 75px;
-  padding: 30px;
   display: flex;
-  align-items: center;
-  background-color: #FFFFFF;
-  border-radius: 16px;
-  box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+  flex-direction: row;
+}
+@media (max-width: 1100px) {
+  .info-banner-block {
+    flex-direction: column;
+  }
 }
 @media (max-width: 768px) {
   .info-banner-block {
     margin-top: 40px;
   }
 }
+.info-banner-block__info-full {
+  background-color: #FFFFFF;
+  box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+  border-radius: 16px;
+  padding: 21px 42px;
+}
+.info-banner-block__info-full:not(:last-child) {
+  margin-right: 20px;
+}
+@media (max-width: 1100px) {
+  .info-banner-block__info-full:not(:last-child) {
+    margin-right: 0;
+  }
+}
 .info-banner-block__info {
-  margin: 0px 45px 0px 0px;
-  flex: 1 1 auto;
   display: flex;
   align-items: center;
+}
+@media (max-width: 690px) {
+  .info-banner-block__info {
+    display: none;
+  }
 }
 .info-banner-block__img {
   margin: 0px 45px 0px 0px;
@@ -262,6 +345,9 @@ h6 {
 .info-banner-block__links {
   display: flex;
   align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+  border-radius: 16px;
 }
 .info-banner-block__download {
   margin: 0px 45px 0px 0px;
