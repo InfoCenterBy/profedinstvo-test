@@ -291,6 +291,8 @@ h6 {
   margin-top: 75px;
   display: flex;
   flex-direction: row;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
 }
 @media (max-width: 1100px) {
   .info-banner-block {
@@ -306,15 +308,7 @@ h6 {
   background-color: #FFFFFF;
   box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
   border-radius: 16px;
-  padding: 21px 42px;
-}
-.info-banner-block__info-full:not(:last-child) {
-  margin-right: 20px;
-}
-@media (max-width: 1100px) {
-  .info-banner-block__info-full:not(:last-child) {
-    margin-right: 0;
-  }
+  padding: 18px 38px;
 }
 .info-banner-block__info {
   display: flex;
@@ -326,7 +320,7 @@ h6 {
   }
 }
 .info-banner-block__img {
-  margin: 0px 45px 0px 0px;
+  margin: 0px 25px 0px 0px;
   width: 100px;
 }
 .info-banner-block__img img {
@@ -350,7 +344,6 @@ h6 {
   border-radius: 16px;
 }
 .info-banner-block__download {
-  margin: 0px 45px 0px 0px;
   color: #343434;
   font-size: 16px;
   font-weight: 500;
