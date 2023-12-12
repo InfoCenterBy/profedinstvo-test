@@ -2219,3 +2219,41 @@ main:has(.new-documents) {
   width: 32px;
   height: 32px;
 }
+.youtube-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+  color: #192A82;
+}
+.youtube-logo svg {
+  transform: scale(200%);
+}
+.youtube-logo span {
+  margin-top: 12px;
+}
+
+.header__logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list li:has(.youtube-logo) {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__list li:has(.youtube-logo) {
+    display: block;
+  }
+}
+.header__list .youtube-logo {
+  display: none;
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .header__list .youtube-logo {
+    display: flex;
+  }
+}

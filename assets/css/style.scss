@@ -2471,3 +2471,44 @@ main:has(.new-documents){
 		}
     margin-bottom: 36px;
 }
+
+
+.youtube-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+  color: #192A82;
+  svg{
+    transform: scale(200%);
+  }
+  span{
+    margin-top: 12px;
+  }
+}
+
+.header{
+  &__logo-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list{
+    li:has(.youtube-logo){
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+    .youtube-logo {
+      display: none;
+      @media (max-width: 768px) {
+        display: flex;
+      }
+      color: #FFFFFF;
+    }
+  }
+}
+
